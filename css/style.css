@@ -55,4 +55,30 @@ section {
   min-height: 100vh;
   padding: 150px 100px 100px 100px;
 }
-
+section:nth-child(odd) {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+}
+section img {
+  width: 350px;
+  height: auto;
+  margin-left: 30px;
+}
+section h2 {
+  font-size: 2.5em;
+}
+section p {
+font-size: 18px;  
+}
+section a {
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #111;
+  color: #fff;
+  margin-top: 30px;
+}
