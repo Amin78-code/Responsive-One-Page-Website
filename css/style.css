@@ -19,7 +19,7 @@ header {
 }
 header .logo {
   color: #fff;
-  font-style: 30px;
+  font-size: 30px;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 700;
@@ -40,6 +40,7 @@ header ul li a {
   text-decoration: none;
   cursor: pointer;
 }
+.btn-active,
 header ul li a.active,
 header ul li a:hover {
   background-color: #205aff;
@@ -61,6 +62,10 @@ section:nth-child(odd) {
   align-items: center;
   background-color: #111;
   color: #fff;
+}
+section:nth-child(odd) a {
+  background-color: #fff;
+  color: #111;
 }
 section img {
   width: 350px;
@@ -145,7 +150,16 @@ section a {
     transform: rotate(-45deg);
     box-shadow: 0 0 0 #fff;
   }
-
-  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 50px 50px;
+  }
+  section img {
+    max-width: 100%;
+    margin: 50px 0 0 0;
+  }
 }
 /* media query ends */
